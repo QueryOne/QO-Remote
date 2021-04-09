@@ -1,0 +1,51 @@
+
+html {
+  --scrollbarBG: rgba(65, 65, 65, 0.15);
+  --thumbBG: rgba(82, 84, 84, 0.38);
+  --thumbBGActive: rgba( 14, 14, 14, 0.55);
+}
+::-webkit-scrollbar {
+  width : 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 5px;
+  border: 1px solid var(--thumbBGActive);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--thumbBGActive) ;
+  border-radius: 5px;
+  border: 1px solid var(--scrollbarBG);
+}
+
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+.ui-resizable-ghost { border: 1px dotted gray; }
+.ui-resizable-helper { border: 1px dotted rgba(15, 15, 155, 0.87); }
+
+
+#QO-Coding input:focus { outline: none; }
+
+/* Delete dialog modifications */
+.ui-dialog-buttonset > .ui-button {
+  border: 1px solid rgba( 1, 1, 1, 0.11 );
+  outline: 3px solid rgba( 1, 1, 1, 0.11 );
+  outline-width: 3px !important;
+}
+
+.ui-dialog-titlebar > .ui-button {
+  outline-width: 0px !important;
+}
